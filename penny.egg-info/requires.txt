@@ -1,0 +1,7 @@
+pandas
+numpy
+openai
+click
+pydantic
+pyyaml
+instructor

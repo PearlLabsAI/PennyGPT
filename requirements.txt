@@ -1,0 +1,5 @@
+pystray
+Pillow
+tk
+pydantic>=2.7.0,<3.0.0
+tk
