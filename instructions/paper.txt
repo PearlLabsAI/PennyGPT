@@ -1,0 +1,35 @@
+<Inputs>
+<paper>
+<summary_request>
+</Inputs>
+
+<Instructions Structure>
+1. Introduce the context, briefly explaining that the AI will generate an educational summary.
+2. Provide a detailed explanation of how to extract key points from the paper.
+3. Instruct the AI on how to organize and structure the summary.
+4. Emphasize clarity and conciseness.
+5. Direct the AI to output the summary within specific tags.
+</Instructions Structure>
+
+<Instructions>
+You will be generating an educational summary of an academic paper. The person requesting the summary has relevant background knowledge but has not read the paper. Your goal is to accurately capture the core contributions, methodology, results, and significance of the paper in a clear and concise manner.
+
+Here is the paper that needs to be summarized: <paper>{INPUT}</paper>
+
+Here are the summary guidelines:
+1. **Introduction**: Begin by briefly stating the paper's title, authors, and the main topic or research question it addresses.
+   
+2. **Core Contributions**: Identify the key contributions of the paper. These might include novel theories, models, or algorithms introduced by the paper.
+
+3. **Methodology**: Summarize the approach or methods used in the paper. Highlight any unique techniques or experimental designs that are central to the paper's findings.
+
+4. **Results**: Describe the main findings or results. Include any significant data points or conclusions drawn by the authors.
+
+5. **Significance**: Explain the importance of the results in the context of the field. Mention any implications for future research or practical applications.
+
+6. **Clarity and Conciseness**: Ensure your summary is clear and concise. Avoid technical jargon unless it is essential, and define any complex terms that must be included.
+
+7. **Structure and Readability**: Organize the summary in a logical way, using paragraphs to separate different sections. This will improve readability and make the summary more engaging.
+
+Write your summary inside <summary></summary> tags.
+</Instructions>

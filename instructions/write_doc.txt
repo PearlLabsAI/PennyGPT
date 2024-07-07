@@ -1,0 +1,114 @@
+**Objective:** Improve the existing README file of a codebase by making it more informative, skimmable, and user-friendly, and ensure all features of the codebase are documented.
+
+**Input Codebase:**
+```<codebase>```
+
+**Instructions for README Improvement:**
+
+1. **Overview:**
+   - Provide a brief, clear overview of the project, its purpose, and its main features.
+   - Include a high-level description of the technology stack used.
+
+2. **Installation:**
+   - Include step-by-step installation instructions.
+   - Specify system requirements and dependencies.
+   - Use bullet points for each step for easy skimming.
+
+3. **Usage:**
+   - Provide examples of how to use the project.
+   - Include command-line instructions, screenshots, or code snippets where applicable.
+   - Explain the main functionalities and how to interact with them.
+
+4. **Configuration:**
+   - Describe how to configure the project, including environment variables and configuration files.
+   - Use tables or lists for configuration options to enhance readability.
+
+5. **Features:**
+   - **Identify Features:** Thoroughly review the entire codebase to identify all features, including those not currently documented.
+   - **Describe Features:** Provide clear, concise descriptions of each feature.
+   - **Usage Examples:** Include usage examples for each feature.
+   - **Benefits:** Explain the benefits and use cases of each feature.
+   - **Configuration Options:** Detail any configuration options relevant to each feature.
+   - **New/Advanced Features:** Highlight new or advanced features that users might overlook.
+
+6. **Contributing:**
+   - Provide guidelines for contributing to the project.
+   - Include instructions for setting up a development environment, submitting issues, and creating pull requests.
+   - Highlight any code style guidelines and best practices.
+
+7. **License:**
+   - Clearly state the project's license.
+   - Provide a link to the full license text if available.
+
+8. **Acknowledgements:**
+   - Mention any third-party libraries, tools, or contributors that significantly helped in the development of the project.
+
+9. **Additional Sections:**
+   - Include any other sections relevant to your project, such as FAQs, Troubleshooting, or a Roadmap.
+
+10. **Formatting and Style:**
+    - Ensure consistency in formatting, such as headers, bullet points, and code blocks.
+    - Use Markdown features effectively (e.g., headers, lists, tables, code blocks).
+    - Ensure all text is clear, concise, and free of grammatical errors.
+    - Use bold or italics to emphasize important points.
+
+**Example README Structure:**
+
+1. **Project Title**
+
+2. **Overview**
+   - Brief project description
+   - Key features
+
+3. **Table of Contents**
+
+4. **Installation**
+   - Prerequisites
+   - Installation steps
+
+5. **Usage**
+   - Basic usage example
+   - Detailed instructions for main functionalities
+
+6. **Configuration**
+   - Configuration options
+   - Environment variables
+
+7. **Features**
+   - Comprehensive list of features
+   - Descriptions, usage examples, and configurations
+
+8. **Contributing**
+   - Contribution guidelines
+   - Setting up development environment
+
+9. **License**
+
+10. **Acknowledgements**
+
+---
+
+**Existing README Content:**
+
+<readme>
+{INPUT}
+</readme>
+
+---
+
+**Instructions for Improvement:**
+
+- Make the document easy to skim by splitting content into clear, titled sections.
+- Use informative section titles and include a table of contents.
+- Keep paragraphs short and start them with topic sentences.
+- Put the most important information at the beginning of sections.
+- Use bullets, tables, and bold text to highlight important information.
+- Simplify sentences and ensure they are unambiguous.
+- Maintain consistency in formatting and style.
+- Be thorough in the installation and usage instructions.
+- Identify all features of the codebase, including those not currently documented, and ensure they are described in detail.
+- Include code examples that are general and easy to export.
+- Ensure the contributing guidelines are clear and helpful.
+- Regularly review and refine the README to keep it up-to-date.
+
+By following these guidelines, enhance the existing README to be more user-friendly, informative, and comprehensive, ensuring that all features of the codebase are documented.
