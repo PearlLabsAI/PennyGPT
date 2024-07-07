@@ -3,23 +3,21 @@ from setuptools import setup, find_packages
 setup(
     name="penny",
     version="0.1.0",
-    description="A CLI tool for working with LLMs.",
+    description="A minimal TUI for coding with LLMs.",
     author="Joseph Blazick",
-    author_email="joe.blazick@yahoo.com",
+    author_email="blazickjp@gmail.com",
     url="https://github.com/jblazick/penny",
     packages=find_packages(),
     install_requires=[
-        "pandas",
-        "numpy",
-        "openai",
-        "click",
+        "litellm",
+        "rich",
         "pydantic",
-        "pyyaml",
+        "textualize",
         "instructor",
     ],
     entry_points={
         "console_scripts": [
-            "penny=src.penny:penny",
+            "penny=src.penny",
         ],
     },
     classifiers=[
