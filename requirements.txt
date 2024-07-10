@@ -1,5 +1,2 @@
-pystray
-Pillow
-tk
-pydantic>=2.7.0,<3.0.0
-tk
+textual==0.71.0
+litellm==1.41.7

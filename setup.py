@@ -10,14 +10,11 @@ setup(
     packages=find_packages(),
     install_requires=[
         "litellm",
-        "rich",
-        "pydantic",
-        "textualize",
-        "instructor",
+        "textual",
     ],
     entry_points={
         "console_scripts": [
-            "penny=src.penny",
+            "penny=src.ChatApp",
         ],
     },
     classifiers=[

@@ -11,14 +11,15 @@ from FileManagerModal import FileManagerModal
 from FloatingContextWindow import FloatingContextWindow
 
 import asyncio
-import logging
+
+# import logging
 
 
-# Set up logging
+# # Set up logging
 
-logging.basicConfig(
-    filename="chat.log", level=logging.DEBUG, format="%(levelname)s - %(message)s"
-)
+# logging.basicConfig(
+#     filename="chat.log", level=logging.DEBUG, format="%(levelname)s - %(message)s"
+# )
 
 
 class ChatApp(App):
@@ -43,7 +44,7 @@ class ChatApp(App):
         self.sidebar = FloatingContextWindow()
 
     def compose(self) -> ComposeResult:
-        yield Header(show_clock=True, icon="💬")
+        yield Header(show_clock=True, icon="🪙")
         yield self.sidebar
         yield from self.ui_manager.compose()
         yield Footer()
@@ -58,14 +59,9 @@ class ChatApp(App):
 
     def add_file_to_context(self, file_path: str) -> None:
         """Add a file to the context for the LLM."""
-        logging.debug(f"Attempting to add file: {file_path}")
         if file_path not in self.context_files:
             self.context_files.add(file_path)
-            logging.debug(f"Updated context_files: {self.context_files}")
             self.sidebar.update_files(file_path)
-            logging.debug("ContextHeader updated")
-        else:
-            logging.debug(f"File {file_path} already in context")
 
     def watch_current_response(self, response: str) -> None:
         """Watch for changes in the current response and update the display."""
@@ -96,17 +92,14 @@ class ChatApp(App):
     def get_file_contents(self) -> str:
         """Get the contents of all context files."""
         contents = []
-        logging.debug(f"Getting contents of files: {self.context_files}")
         for file_path in self.context_files:
             try:
                 with open(file_path, "r") as file:
                     content = file.read()
                     contents.append(f"File: {file_path}\n{content}\n")
-                    logging.debug(f"Read content from {file_path}")
             except Exception as e:
                 error_msg = f"Error reading {file_path}: {str(e)}"
                 contents.append(error_msg)
-                logging.error(error_msg)
         return "\n".join(contents)
 
     def action_help(self) -> None:
