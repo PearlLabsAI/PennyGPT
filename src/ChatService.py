@@ -11,12 +11,13 @@ class ChatService:
         messages: List[Dict[str, str]], context: str
     ) -> AsyncGenerator[str, None]:
         try:
-            system_message = {"role": "system", "content": f"Context:\n{context}"}
+            system_message = {"role": "system",
+                              "content": f"Context:\n{context}"}
             all_messages = [system_message] + messages
 
             stream = await asyncio.to_thread(
                 completion,
-                model="gpt-4",
+                model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
                 messages=all_messages,
                 max_tokens=1000,
                 temperature=0.2,
