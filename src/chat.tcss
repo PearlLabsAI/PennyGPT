@@ -3,34 +3,33 @@ Screen {
     background: #2e2e2e;
 }
 
-CustomHeader {
-    height: auto;
-    min-height: 3;
-    dock: top;
-}
-
-Footer {
-    height: 1;
-    dock: bottom;
-}
-
 ChatInput {
     background: #1e1e1e;
     color: #fff;
     border: solid #444;
 }
 
+#app_grid {
+    grid-size: 2;
+    grid-columns: 1fr 3fr;
+}
+
 #main_container {
-    height: 100%;
-    padding: 1 1 1 1; /* Use 1, 2, or 4 integers for padding */
+    height: 80%;
 }
 
 #chat_display {
     border: solid #ccc; /* Specify border type and color */
     padding: 1; /* Use 1, 2, or 4 integers for padding */
     margin-bottom: 1; /* Use 1, 2, or 4 integers for margin */
-    height: 70%; /* Use a valid unit for height */
+    height: 100%; /* Use a valid unit for height */
     overflow: auto;
+}
+
+#chat_grid {
+    grid-size: 1;
+    grid-rows: 75% 25%;
+    padding: 1 1 1 1; /* Use 1, 2, or 4 integers for padding */
 }
 
 #input_container {
